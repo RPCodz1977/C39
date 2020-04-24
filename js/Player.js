@@ -30,4 +30,8 @@ playerInfoRef.on("value", (data)=>{
   allPlayers = data.val();
 });
   }
+  deletePlayer(){
+    var players = database.ref('players');
+    players.remove();
+  }
 }
